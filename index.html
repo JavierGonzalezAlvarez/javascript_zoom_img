@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Range JS</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+    <h1>Img</h1>
+
+    <div>
+        <h2>Range - Slider</h2>
+    </div>
+
+    <div id="divImg">
+        <img id="img" src="./img/rose.jpg" width="200px" height="200" onclick="enlarge()" />
+    </div>
+
+    <div>
+        <button id="rotare" onclick="Rotation()">Rotate Img</button>
+    </div>
+
+    <div class="slidecontainer">
+        <label for="myRangeZoom">Zoom</label>
+        <input type="range" min="1" max="100" value="20" class="slider" id="myRangeZoom" onclick="Zoom()">
+    </div>
+
+    <div class="slidecontainer">
+        <label for="myRangeB">Brightnes</label>
+        <input type="range" min="1" max="100" value="20" class="slider" id="myRangeB" onclick="Brightness()">
+    </div>
+
+    <div class="slidecontainer">
+        <label for="myRangeC">Constrast</label>
+        <input type="range" min="1" max="100" value="20" class="slider" id="myRangeC" onclick="Contrast()">
+    </div>
+
+    <div class="slidecontainer">
+        <label for="myRangeR">Rotate</label>
+        <input type="range" min="1" max="100" value="0" class="slider" id="myRangeR" onclick="Rotation()">
+    </div>
+
+    <div class="slidecontainer">
+        <label for="myRangeS">Blur</label>
+        <input type="range" min="1" max="100" value="20" class="slider" id="myRangeS" onclick="Sharpness()">
+    </div>
+
+
+</body>
+
+<script src="./js/script.js">
+</script>
+
+
+</html>
